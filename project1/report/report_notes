@@ -1,0 +1,29 @@
+
+
+
+>possible rewrite of abstract
+
+The aim of this project is two-fold: primarily we aim to evaluate the limits of machine accuracy in the context of solving differential equations, and it functions as an introduction to problem solving in C++. We will be comparing the efficiency of vector and matrix methods of storage with respect to computation time while exercising basic C++ skills (i.e. dynamic memory allocation, compiling of cpp files, etc.). 
+
+>notes on intro:
+  - none thus far (will return)
+
+>Math motiv:
+  -possible rewrite of opening sentance (identicle structure to the abstract) although utilitarian it repetition can be dangerous
+		*can also redo the opening of the abstract;
+  	"the primary goal of this project is <machine accuracy bit>... and secondarily <C++>
+
+  - line break after "closed form solution given by..." for aethetics
+ 
+>Algorithmssssss
+  -can we get the matrix and the vectors on the same line? (low priority)
+  -other than that we just need to finish it
+
+>Error discussion
+  -comment that the method is standard? 
+  -wording: "we elected to [sample] one [error entry <aside> specifically the first entry </aside> fro the sake of efficiency]"
+  -discuss in terms of step size (we can approximate the order of 10) as opposed to the index i (for clearity)
+
+>figure 1:
+  - probably fine unless we write something wierd for results discussion
+
