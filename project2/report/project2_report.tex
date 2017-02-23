@@ -10,6 +10,8 @@
 \usepackage{listings}
 \usepackage[top = 1in, bottom = 1in, right = 1in, left = 1in]{geometry}
 \usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\usepackage{inputenc}
 
 \begin{document}
 \maketitle
@@ -18,7 +20,34 @@
 	The goal of this project is to explore a model of quantum dots. We will be investigating the behavior of two electron in a 3-D simple harmonic potential while comparing the models with and without the particles interacting. To do this we will be solving the Schrödinger equation using the Jacobi method. 
 	%some results to be added 
 \end{abstract}
+
 \section{Introduction}
+Finding the eigenvalues of a matrix can give information on properties of a system, such as energies or spin. These properties can be useful to know when experiments are performed. Since we can predict the Hamiltonian of a system using the Shr$\ddot{o}$dinger equation. If we have a system with many particles, it is impractical to do so by hand, which is where computing eigenvalues from a matrix using computers becomes useful. Doing so will require a code that can find eigenvalues from a matrix, which is what the present work attempts to create.
+
+\subsection{Mathematical Motivation}
+The Hamiltonians that we will be concerned with will be in the form of a tridiagonal matrix and tridiagonal matricies are simple to get eigenvalues from, but if the matrix were 100x100, it would be too much to compute by hand.
+
+\section{Solution}
+\subsection{Setup}
+We know that the hamiltonian is a tridiagonla matrix, where the diagonals are 2/$\hbar^2$ +V$_N$ and the elements on either side of the diagonals are -1/$\hbar^2$ for an NxN matrix:
+\[
+H=\begin{bmatrix}
+\frac{2}{\hbar^2}+V_1 & -\frac{1}{\hbar^2}&0&0&...&0\\
+ -\frac{1}{\hbar^2}&\frac{2}{\hbar^2}+V_2& -\frac{1}{\hbar^2}&0&...&0\\
+0& -\frac{1}{\hbar^2}&\frac{2}{\hbar^2}+V_3& -\frac{1}{\hbar^2}&...&0\\
+0&0&-\frac{1}{\hbar^2}&\frac{2}{\hbar^2}+V_4&...&0\\
+...&...&...&...&...&-\frac{1}{\hbar^2}\\
+0&0&0&0& -\frac{1}{\hbar^2}&\frac{2}{\hbar^2}+V_{N-1}
+\end{bmatrix}
+\]
+
+
+\subsection{Jacobi Algorithm}
+
+\subsection{Error}
+
+\section{Conclusion}
+
 \section{References}
 
 %include article morten listed in the project description
