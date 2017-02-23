@@ -40,14 +40,14 @@ H=\begin{bmatrix}
 0&0&0&0& -\frac{1}{\hbar^2}&\frac{2}{\hbar^2}+V_{N-1}
 \end{bmatrix}
 \]
-
+This matrix is what we need to get the eigenvalues of. There is a function in python which tells us the eigenvalues of a matrix and we use this at the beginning of our code to see what eigenvalues to expect, so that once we create out Jacobi solver, we know whether the values returned are correct or not.
 
 \subsection{Jacobi Algorithm}
 
 \subsection{Error}
 
 \section{Conclusion}
-
+We have found that the Jacobi method is a slower way of finding the eigenvalues of a matrix compared to the built in eigenvalue solver function. But when we have large matricies, simply storing it could take up a significant amount of space, which is one of the downfalls of using the built in functions, they require a defined matrix to work, which may be impractical with a sufficiently large matrix. The Jacobi method is one solution to a matrix so large that it is not feasible to store it, where we can create a matrix using smaller vectors, while still being able to find reasonably close eigenvalues to what is returned from the built in functions.
 \section{References}
 
 %include article morten listed in the project description
