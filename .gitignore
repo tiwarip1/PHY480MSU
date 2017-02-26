@@ -1,3 +1,10 @@
 *.log
 *.aux
 *.gz
+
+
+
+#some notes: retroactively apply gitignore this to see what will be rmd:
+#git ls-files -ci --exclude-standard
+#this to rm:
+#git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
